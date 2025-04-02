@@ -8,16 +8,17 @@
 <link href="../styles.css" rel="stylesheet" type="text/css">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Sedgwick+Ave&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <wrapper>
-  <header>
-    <h1>Doble Porción</h1>
-  </header>
+  <header> </header>
   <nav>
     <ul>
-<a href="../index.html"><li>Home</li></a>      <a href="../news.html"><li>News</li></a>
+<a href="../index.html" class="dobleporcion"><li>Doble Porci&oacute;n</li></a>      <a href="../news.html"><li>News</li></a>
       <a href="../music.html"><li>Music</li></a>
       <a href="../videos.html"><li>Videos</li></a>
       <a href="../tour.html"><li>Tour</li></a>
@@ -33,9 +34,10 @@
     <h2>Home</h2>
   </main>
   <!-- TemplateEndEditable -->
-<footer>
+
+</wrapper>
+	<footer>
     <p>2025, Santiago Perez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category</p>
   </footer>
-</wrapper>
 </body>
 </html>
