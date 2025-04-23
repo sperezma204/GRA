@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trivago | Santiago Perez 2025</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(planeimage.png.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0A0E0D;
+    background-position: 0% 100px
+%;
+    background-position: 0% 100px;
+}
+header {
+    height: 100px;
+    background-color: #F8FFB5;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.20);
+}
+footer {
+    color: rgba(255,255,255,1.00);
+    font-size: 12px;
+    font-family: sans-serif;
+    position: fixed;
+    padding: 8px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.20);
+}
+.icons {
+    height: 50px;
+    width: auto;
+}
+#Tabs1 li {
+    text-align: center;
+    background-color: rgba(248,255,181,0.70);
+    background-image: none;
+    border-top-left-radius: 20px;
+    margin: 0 0 0 12px;
+    border-top-right-radius: 20px;
+}
+#Tabs1 div {
+    margin-top: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(248,255,181,0.70);
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#tabs-1 input {
+    margin-left: 8px;
+    border: medium solid rgba(0,0,0,1.00);
+    border-radius: 13px;
+}
+.submit {
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(252,189,192,1.00);
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="airplane.png.png" alt="" width="540" height="541" class="icons"><br>
+      Flights</a></li>
+<li><a href="#tabs-2"><img src="hotel.png.png" alt="" width="462" height="528" class="icons"><br>
+  Hotels</a></li>
+<li><a href="#tabs-3"><img src="car.png.png" alt="" width="588" height="469" class="icons"><br>
+  Cars</a></li>
+<li><a href="#tabs-4"><img src="umbrella.png.png" alt="" width="558" height="552" class="icons"><br>
+  Vacations</a></li>
+<li><a href="#tabs-5"><img src="cruise.png.png" alt="" width="560" height="504" class="icons"><br>
+  Cruises</a></li>
+    </ul>
+    <div id="tabs-1">
+     <input type="text" placeholder="Leaving from">
+		<input type="text" placeholder="Going to">
+		From: <input type="date">To: <input type="date">
+		<input type="submit" class="submit">
+    </div>
+<div id="tabs-2">
+      <p>Content 2</p>
+    </div>
+<div id="tabs-3">
+  <p>Content 3</p>
+</div>
+<div id="tabs-4">
+  <p>Content 4</p>
+</div>
+<div id="tabs-5">
+  <p>Content 5</p>
+</div>
+  </div>
+</wrapper>
+<footer><p>© 2025, Santiago Perez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
