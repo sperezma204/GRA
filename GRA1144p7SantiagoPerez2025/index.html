@@ -40,7 +40,7 @@ footer {
 }
 #Tabs1 li {
     text-align: center;
-    background-color: rgba(248,255,181,0.70);
+    background-color: rgba(248,255,181,0.90);
     background-image: none;
     border-top-left-radius: 20px;
     margin: 0 0 0 12px;
@@ -51,11 +51,13 @@ footer {
     margin-right: 10px;
     margin-bottom: 10px;
     background-color: rgba(248,255,181,0.70);
+    text-align: center;
 }
 #Tabs1 ul {
     background-image: none;
     border: none;
     background-color: transparent;
+    padding-left: 370px;
 }
 #Tabs1 {
     background-image: none;
@@ -63,13 +65,53 @@ footer {
     background-color: transparent;
 }
 #tabs-1 input {
-    margin-left: 8px;
-    border: medium solid rgba(0,0,0,1.00);
-    border-radius: 13px;
+    margin-left: 30px;
+    border: medium solid rgba(252,189,192,1.00);
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
 }
 .submit {
     color: rgba(255,255,255,1.00);
     background-color: rgba(252,189,192,1.00);
+}
+.hotelkoala {
+    height: auto;
+    width: 260px;
+    padding-left: 480px;
+    display: block;
+    padding-top: 20px;
+}
+#tabs-2 input {
+    border: medium solid rgba(252,189,192,1.00);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.logo {
+    height: auto;
+    width: 374px;
+    padding-left: 800px;
+}
+.flightskoala {
+    height: auto;
+    width: 260px;
+    display: block;
+    padding-left: 480px;
+    padding-top: 40px;
+}
+#tabs-3 input {
+    border: medium solid rgba(252,189,192,1.00);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#tabs-4 input {
+    border: medium solid rgba(252,189,192,1.00);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#tabs-5 input {
+    border: medium solid rgba(251,185,192,1.00);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -80,7 +122,7 @@ footer {
 </head>
 
 <body>
-<header></header>
+<header><img src="logokoavatravel-01.png" alt="" width="1050" height="275" class="logo"></header>
 <wrapper>
   <div id="Tabs1">
     <ul>
@@ -98,21 +140,40 @@ footer {
     <div id="tabs-1">
      <input type="text" placeholder="Leaving from">
 		<input type="text" placeholder="Going to">
-		From: <input type="date">To: <input type="date">
+		From: <input type="date"> 
+		To: <input type="date">
 		<input type="submit" class="submit">
-    </div>
+	<img src="flightskoala-01.png" alt="" width="621" height="600" class="flightskoala">    </div>
 <div id="tabs-2">
-      <p>Content 2</p>
-    </div>
+<label for="textfield">City:</label>
+  <input type="text" name="textfield">
+<label for="date">From:</label>
+  <input type="date">
+ To: <input type="date">
+<input name="submit" type="submit" class="submit" value="Submit">
+<img src="hotelkoala-01.png" alt="" width="571" height="600" class="hotelkoala"></div>
 <div id="tabs-3">
-  <p>Content 3</p>
-</div>
+<label for="textfield">Pick up Location:</label>
+<input type="text" name="textfield" id="textfield">
+<input type="date">
+<input type="date">
+<input type="submit" class="submit">
+<img src="carskoala-01.png" alt="" width="684" height="600" class="hotelkoala"></div>
 <div id="tabs-4">
-  <p>Content 4</p>
-</div>
+<label for="textfield2">City:</label>
+<input type="text" name="textfield2" id="textfield2">
+<input type="date">
+<input type="date">
+<input type="submit" class="submit">
+<img src="travelkoala-01.png" alt="" width="731" height="600" class="hotelkoala"></div>
 <div id="tabs-5">
-  <p>Content 5</p>
-</div>
+<label for="textfield3">City:</label>
+<input type="text" name="textfield3" id="textfield3">
+<input type="date">
+<input type="date">
+<input type="number" placeholder="Number of travelers" max="10" min="1">
+<input name="submit" type="submit" class="submit" value="Submit">
+<img src="cruiseskoala-01.png" alt="" width="541" height="600" class="hotelkoala"></div>
   </div>
 </wrapper>
 <footer><p>© 2025, Santiago Perez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
