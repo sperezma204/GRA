@@ -1,0 +1,101 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+	<title>Halloween costumes | Santiago Perez, 2025</title>
+<style>
+body{
+    margin: 0;
+    background-color: #7d2830;
+    text-align-last: center;
+	}
+wrapper {
+    background-color: #572f46;
+    width: 670px;
+    height: 680px;
+    display: block;
+    margin: auto;
+}
+footer {
+    font-size: 12px;
+    padding: 8px 0;
+    font-family: sans-serif;
+    color: #dfbfd3;
+}
+div {
+	background-color:#FEC196;
+	display:inline-block;
+	margin:10px;
+	box-sizing:border-box;
+	}
+#div1 {
+    background-image: url("parts-01.png");
+    background-repeat: no-repeat;
+    height: 660px;
+    width: 500px;
+    float: left;
+    background-color: #916e90;
+}
+#div2, #div3, #div4, #div5 {
+    width: 125px;
+    height: 150px;
+    background-color: #572f46;
+}
+#div2 img, #div3 img, #div4 img, #div5 img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Freckle Face", system-ui;
+    margin: 8px 0 0;
+    font-size: 48px;
+    color: #dfbfd3;
+}
+p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 8px 0;
+    color: #dfbfd3;
+    font-style: normal;
+    font-family: sans-serif;
+}
+.cat {
+    max-width: auto;
+    max-height: auto;
+    width: 42%;
+    height: auto;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<h1>Hallowen costumes&excl;</h1>
+<p>Drag the costume you want the cat to wear</p>
+<wrapper>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="cat.png" alt=""  class="cat"> </div>
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="superman.png" draggable="true" ondragstart="drag(event)" id="drag2" width="500" height="600"></div>
+  <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="jail.png"="true" ondragstart="drag(event)" id="drag3" width="500" height="600"> </div>
+  <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="doctor.png" draggable="true" ondragstart="drag(event)" id="drag4" width="500" height="600"></div>
+  <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="soccer.png" draggable="true" ondragstart="drag(event)" id="drag5" width="500" height="600"></div>
+  <footer> © 2025, Santiago Perez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+</wrapper>
+</body>
+</html>
