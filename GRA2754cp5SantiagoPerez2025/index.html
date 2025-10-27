@@ -1,101 +1,237 @@
-
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="utf-8" />
+<title>Halloween Costumes | Santiago Perez, 2025</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
-	<title>Halloween costumes | Santiago Perez, 2025</title>
+
 <style>
-body{
-    margin: 0;
-    background-color: #7d2830;
-    text-align-last: center;
-	}
-wrapper {
-    background-color: #572f46;
-    width: 670px;
-    height: 680px;
-    display: block;
-    margin: auto;
-}
-footer {
-    font-size: 12px;
-    padding: 8px 0;
-    font-family: sans-serif;
-    color: #dfbfd3;
-}
-div {
-	background-color:#FEC196;
-	display:inline-block;
-	margin:10px;
-	box-sizing:border-box;
-	}
-#div1 {
-    background-image: url("parts-01.png");
-    background-repeat: no-repeat;
-    height: 660px;
-    width: 500px;
-    float: left;
-    background-color: #916e90;
-}
-#div2, #div3, #div4, #div5 {
-    width: 125px;
-    height: 150px;
-    background-color: #572f46;
-}
-#div2 img, #div3 img, #div4 img, #div5 img {
-    width: 100%;
-    height: auto;
-}
+  :root{
+    
+    --chest-top: 54%;     
+    --default-scale: 0.46;
+    --ui-w: 940px;
+  }
 
-h1 {
-    font-family: "Freckle Face", system-ui;
-    margin: 8px 0 0;
-    font-size: 48px;
-    color: #dfbfd3;
-}
-p {
-    font-weight: bold;
-    font-size: 18px;
-    margin: 8px 0;
-    color: #dfbfd3;
-    font-style: normal;
-    font-family: sans-serif;
-}
-.cat {
-    max-width: auto;
-    max-height: auto;
-    width: 42%;
-    height: auto;
-}
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background:#7d2830;
+    color:#dfbfd3;
+    font-family:system-ui, sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  h1{
+    font-family:"Freckle Face", system-ui;
+    margin:14px 0 0;
+    font-size:48px;
+  }
+  p{ margin:6px 0 14px; font-weight:700; }
+
+  .wrapper{
+    width:var(--ui-w);
+    display:flex;
+    gap:16px;
+    background:#572f46;
+    padding:12px;
+    border-radius:10px;
+  }
+
+  
+  #div1{
+    background:#916e90;
+    width:560px;
+    height:660px;
+    position:relative;
+    border-radius:10px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+  }
+  .cat{
+    width:78%;
+    height:auto;
+    display:block;
+    pointer-events:none; 
+  }
+  
+  #stage{
+    position:absolute;
+    inset:0;
+  }
+
+  
+  .on-cat{
+    position:absolute;
+    left:50%;
+    top:var(--chest-top);
+    transform:translate(-50%,-50%); 
+    cursor:grab;
+  }
+
+  
+  .picker{
+    width:340px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .slot{
+    background:#572f46;
+    border-radius:10px;
+    padding:10px;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    outline:2px solid rgba(0,0,0,0.15);
+  }
+  .slot.over{ outline-color:#dfbfd3; } 
+
+  .slot img{
+    max-width:100%;
+    max-height:100%;
+    height:auto;
+    width:auto;
+    cursor:grab;
+    user-select:none;
+  }
+
+  footer{
+    max-width:var(--ui-w);
+    font-size:12px;
+    padding:10px 0 18px;
+    text-align:center;
+  }
 </style>
-<script>
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}
-</script>
 </head>
 <body>
-<h1>Hallowen costumes&excl;</h1>
-<p>Drag the costume you want the cat to wear</p>
-<wrapper>
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="cat.png" alt=""  class="cat"> </div>
-  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="superman.png" draggable="true" ondragstart="drag(event)" id="drag2" width="500" height="600"></div>
-  <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="jail.png"="true" ondragstart="drag(event)" id="drag3" width="500" height="600"> </div>
-  <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="doctor.png" draggable="true" ondragstart="drag(event)" id="drag4" width="500" height="600"></div>
-  <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="soccer.png" draggable="true" ondragstart="drag(event)" id="drag5" width="500" height="600"></div>
-  <footer> © 2025, Santiago Perez. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
-</wrapper>
+  <h1>Halloween Costumes!</h1>
+  <p>Drag a costume onto the cat. Drag again to return it to a slot.</p>
+
+  <div class="wrapper">
+    
+    <div id="div1">
+      <img src="cat.png" alt="cat" class="cat">
+      <div id="stage"></div>
+    </div>
+
+    
+    <div class="picker" id="picker">
+      <div class="slot" id="slot-super">
+        
+        <img src="superman.png" id="super" data-scale="0.48" draggable="true" alt="superhero shirt">
+      </div>
+      <div class="slot" id="slot-prisoner">
+        <img src="jail.png" id="prisoner" data-scale="0.46" draggable="true" alt="prisoner shirt">
+      </div>
+      <div class="slot" id="slot-doctor">
+        <img src="doctor.png" id="doctor" data-scale="0.44" draggable="true" alt="doctor shirt">
+      </div>
+      <div class="slot" id="slot-soccer">
+        <img src="soccer.png" id="soccer" data-scale="0.45" draggable="true" alt="soccer shirt">
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025, Santiago Perez
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+
+<script>
+(function(){
+  const stage = document.getElementById('stage');
+  const slots = Array.from(document.querySelectorAll('.slot'));
+  const costumes = Array.from(document.querySelectorAll('.picker img'));
+
+  
+  costumes.forEach(img=>{
+    img.dataset.origin = img.parentElement.id;
+    img.addEventListener('dragstart', dragStart);
+  });
+
+  
+  function dragStart(e){
+    e.dataTransfer.setData('text/plain', e.target.id);
+    
+    e.dataTransfer.effectAllowed = 'move';
+  }
+
+  function allowDrop(e){
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+  }
+
+  
+  stage.addEventListener('dragover', allowDrop);
+  stage.addEventListener('drop', e=>{
+    e.preventDefault();
+    const id = e.dataTransfer.getData('text/plain');
+    const img = document.getElementById(id);
+    placeOnCat(img);
+  });
+
+ 
+  slots.forEach(slot=>{
+    slot.addEventListener('dragover', e=>{
+      allowDrop(e);
+      slot.classList.add('over');
+    });
+    slot.addEventListener('dragleave', ()=>slot.classList.remove('over'));
+    slot.addEventListener('drop', e=>{
+      e.preventDefault();
+      slot.classList.remove('over');
+      const id = e.dataTransfer.getData('text/plain');
+      const img = document.getElementById(id);
+      returnToSlot(img, slot);
+    });
+  });
+
+  
+  function placeOnCat(img){
+  
+    stage.appendChild(img);
+    img.classList.add('on-cat');
+
+    
+    const scale = parseFloat(img.dataset.scale) || parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--default-scale')) || 0.46;
+    const w = Math.round(stage.clientWidth * scale);
+    img.style.width = w + 'px';
+    img.style.height = 'auto';
+    img.style.left = '50%';
+    
+  }
+
+  function returnToSlot(img, slot){
+    slot.appendChild(img);
+    img.classList.remove('on-cat');
+    
+    img.style.width = '';
+    img.style.height = '';
+    img.style.left = '';
+    img.style.top = '';
+    img.style.transform = '';
+  }
+
+ 
+  costumes.forEach(img=>{
+    img.addEventListener('dblclick', ()=>{
+      if(img.parentElement.id === 'stage'){
+        
+        const origin = document.getElementById(img.dataset.origin);
+        returnToSlot(img, origin);
+      }else{
+        placeOnCat(img);
+      }
+    });
+  });
+
+})();
+</script>
 </body>
 </html>
